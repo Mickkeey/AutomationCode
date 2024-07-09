@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" allow-return-values="true">
+    <parameter name="BaseURL" value="https://www.ebay.com"/>
+    <parameter name="searchProduct" value="Ipad"/>
+    <parameter name="listingResultText" value="results for Ipad"/>
+    <parameter name="sortListing" value="Price + Shipping: lowest first"/>
+    <parameter name="numberofItems" value="11"/>
+    <test thread-count="1" name="Test">
+        <packages>
+			<package name="com.ebay.tests.*" />
+		</packages>
+    </test>
+</suite>
